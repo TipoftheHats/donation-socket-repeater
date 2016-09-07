@@ -1,7 +1,12 @@
+/* eslint-disable babel/new-cap, new-cap */
 'use strict';
 
-const app = require('express').createServer();
-const io = require('socket.io')(app);
+const app = require('express')();
+const server = require('http').Server(app);
+const io = require('socket.io')(server);
+
+server.listen(80);
+
 const convict = require('convict');
 const conf = convict({
 	port: {
