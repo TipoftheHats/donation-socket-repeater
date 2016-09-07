@@ -3,6 +3,7 @@
 
 const app = require('express')();
 const server = require('http').Server(app);
+const bodyParser = require('body-parser');
 const io = require('socket.io')(server);
 const convict = require('convict');
 const conf = convict({
@@ -22,6 +23,7 @@ const conf = convict({
 	}
 }).getProperties();
 
+app.use(bodyParser.json());
 server.listen(conf.port);
 console.log(`Listening on port ${conf.port}.`);
 

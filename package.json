@@ -24,6 +24,7 @@
     "eslint-plugin-babel": "^3.3.0"
   },
   "dependencies": {
+    "body-parser": "^1.15.2",
     "convict": "^1.4.0",
     "express": "^4.14.0",
     "socket.io": "^1.4.8"
