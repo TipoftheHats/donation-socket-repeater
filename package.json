@@ -1,0 +1,29 @@
+{
+  "name": "donation-socket-repeater",
+  "version": "1.0.0",
+  "description": "Receives donations from the tracker via a postback URL, and repeats them via a websocket.",
+  "main": "index.js",
+  "scripts": {
+    "static": "eslint .",
+    "test": "npm run static"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TipoftheHats/donation-socket-repeater.git"
+  },
+  "author": "Alex Van Camp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TipoftheHats/donation-socket-repeater/issues"
+  },
+  "homepage": "https://github.com/TipoftheHats/donation-socket-repeater#readme",
+  "devDependencies": {
+    "babel-eslint": "^6.1.2",
+    "eslint": "^3.4.0",
+    "eslint-config-xo": "^0.15.4",
+    "eslint-plugin-babel": "^3.3.0"
+  },
+  "dependencies": {
+    "convict": "^1.4.0"
+  }
+}
