@@ -41,6 +41,7 @@ app.post(`/donation`, (req, res) => {
 	const data = {
 		name: req.body.donor__visiblename,
 		rawAmount: req.body.amount,
+		newTotal: req.body.new_total,
 		type: 'cash'
 	};
 
