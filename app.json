@@ -1,0 +1,28 @@
+{
+  "name": "donation-socket-repeater",
+  "description": "Receives donations from the tracker via a postback URL, and repeats them via a websocket.",
+  "repository": "https://github.com/TipoftheHats/donation-socket-repeater",
+  "keywords": [
+	"node",
+	"relay",
+	"socket",
+	"websocket",
+	"socket.io",
+	"donation",
+	"tracker",
+	"gdq",
+	"gamesdonequick"
+  ],
+  "formation": {
+	"web": {
+	  "quantity": 1,
+	  "size": "free"
+	}
+  },
+  "env": {
+	"SECRET_KEY": {
+	  "description": "A secret key, used as a pre-shared key to authenticate clients.",
+	  "generator": "secret"
+	}
+  }
+}

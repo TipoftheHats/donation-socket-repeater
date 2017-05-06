@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "static": "eslint .",
-    "test": "npm run static"
+    "test": "npm run static",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
