@@ -42,7 +42,7 @@ app.post(`/donation`, (req, res) => {
 		name: req.body.donor__visiblename,
 		rawAmount: req.body.amount,
 		newTotal: req.body.new_total,
-		type: 'cash'
+		domain: req.body.domain
 	};
 
 	io.emit('donation', data);
