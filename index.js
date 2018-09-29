@@ -15,7 +15,7 @@ const conf = convict({
 		arg: 'port'
 	},
 	secretKey: {
-		doc: 'The secret key that must be provided in POST requests for them to be accepted..',
+		doc: 'The secret key that must be provided in POST requests for them to be accepted.',
 		format: String,
 		default: '',
 		env: 'SECRET_KEY',
