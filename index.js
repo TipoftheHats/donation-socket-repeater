@@ -20,6 +20,13 @@ const conf = convict({
 		default: '',
 		env: 'SECRET_KEY',
 		arg: 'secretKey'
+	},
+	debug: {
+		doc: 'Whether or not to enable debug logging.',
+		format: Boolean,
+		default: false,
+		env: 'DEBUG',
+		arg: 'debug'
 	}
 }).getProperties();
 
@@ -36,6 +43,10 @@ app.post(`/donation`, (req, res) => {
 	if (req.query.key !== conf.secretKey) {
 		res.sendStatus(403);
 		return;
+	}
+
+	if (conf.debug) {
+		console.log(req.body);
 	}
 
 	const data = {
